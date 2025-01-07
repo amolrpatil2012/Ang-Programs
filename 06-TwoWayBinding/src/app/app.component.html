@@ -1,0 +1,9 @@
+Without Using Two Way Property Binding 
+<br><br>
+<input type="text" [value]="name" (input)="name=$any($event.target).value">
+<p>{{name}}</p>
+<input type="button" (click)="clearName()" value="Clear"> 
+<br><br>
+Using Two-way Data Binding
+<input type="text" [(ngModel)]="name1">
+<p>{{name1}}</p>

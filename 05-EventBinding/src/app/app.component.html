@@ -1,0 +1,18 @@
+<p [innerHTML]="text1"></p>
+<div [innerHTML]="text2"></div>
+<a [href]="url">Link</a>
+<p [style.color]="color">Hello</p>
+<p [innerText]="10*8"></p>
+<button (click)="onClick()">Click</button>
+{{ "Counter : " + count}}
+<br><br>
+Handling Text Box Using Input Event :
+<input type="text" (input)="onChange3($event)">
+{{text3}}
+<br><br>
+Handling Text Box Using template ref variable :
+<input type="text" #t (input)="onChange4(t)">
+{{text4}}
+Handling Text Box Using Key Event :
+<input (keyup)="value1= $any($event.target).value" />
+{{value1}}
