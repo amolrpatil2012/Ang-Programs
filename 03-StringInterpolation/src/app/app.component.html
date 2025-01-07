@@ -1,0 +1,17 @@
+<h1>Hello {{ firstName + ' ' + lastName}} And he is {{getProfession()}}</h1>
+
+Binding element Property
+<div><a href={{getPath()}}>ChatGpt</a></div>
+
+Template Reference Variable
+<input (keyup)="0" type="text" #first>
+<b> Welcome {{first.value}}</b>
+<br>
+Using Pipe
+{{firstName | uppercase}}
+<br>    
+
+<p> 100*80 {{100*80}}</p>
+<p> Max : {{max(100,200)}}</p>
+
+<p style.color={{color}}>This is red</p>
